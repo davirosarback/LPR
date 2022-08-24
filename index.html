@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="menu" id="menu">
+        <ul>
+            <a href="#"><li><i class="bi bi-book"></i> Visão Geral</li></a>
+            <a href="#caracteristicas"><li> <i class="bi bi-box-fill"></i> Características</li></a>
+            <a href=""><li><i class="bi bi-gear-fill"></i> Configurações</li></a>
+            <a href="#" id="login-web" onclick="showHide('login-web-dropdown')"><li >Login Web <i class="bi bi-caret-down-fill"></i></li></a>
+                <ul class="login-web-dropdown" id="login-web-dropdown">
+                        <a href="#"><li>Requisitos recomendados do sistema</li></a>
+                        <a href="#"><li>Inicialização do dispositivo</li></a>
+                        <a href="#"><li>Login</li></a>
+                        <a href="#"><li>Redefinindo a senha</li></a>
+                        <a href="#"><li>Funções web</li></a>
+                </ul>
+            <a href="#"><li>Guia</li></a>  
+            <a href="#" id="ao-vivo" onclick="showHide('ao-vivo-dropdown')"><li>Ao Vivo <i class="bi bi-caret-down-fill"></i></li></a>  
+                <ul class="ao-vivo-dropdown" id="ao-vivo-dropdown">
+                        <a href="#"><li>Fluxo de vídeo</li></a>
+                        <a href="#"><li>Visualização ao vivo</li></a>
+                        <a href="#"><li>Placa reconhecida</li></a>
+                        <a href="#"><li>Instantâneo da placa</li></a>
+                        <a href="#"><li>Funções do sistema</li></a>
+                        <a href="#"><li>Funções do ao vivo</li></a>
+                        <a href="#"><li>Instantâneo do veículo</li></a>
+                        <a href="#"><li>Lista de Eventos</li></a>
+                 </ul>
+        </ul>
+    </nav>
+    <main class="main">
+        <h2><a href="#menu"><i class="bi bi-arrow-up-circle" id="menu"></i></a> Introdução</h2> <br>
+        <p>A  câmera LPR de acesso adota um algoritmo inteligente  de deep learning.  Ela suporta  detecção de  veículos, reconhecimento  de placas, reconhecimento de logotipo, reconhecimento de modelo e reconhecimento  de cores e modo de codificação  , como H.265. 
+            A câmera consiste em caixas protetoras , iluminador e câmera  HD inteligente.  O inteligente HD câmera a dopt s progesive scanning CMO S, which owns several features uch as hh h dd e fini in, baixa iluminação, alta taxa de quadros, e excelente rendição de cores.  
+            A Câmera é extensivamente aplicada à captura  de veículos, e reconhecimento de  estrada comunitária,  estacionamento e outras entradas e  vigilância de saída.
+            </p> <br>
+        <h2 id="caracteristicas"><a href="#menu"><i class="bi bi-arrow-up-circle" id="menu"></i></a> Características</h2> <br>
+            <h3>Gerenciamento de Permissões</h3> <br>
+            <p>
+                <ul>
+                    <li>●	Cada  grupo de usuários possui permissões.  As permissões de um usuário não podem exceder as permissões de seu grupo.</li>
+                    <li>●	2 níveis de usuário .</li>
+                    <li>●	Permissão para abrir barreira e função de  alarme de bloqueio.</li>
+                    <li>●	 Configuração do dispositivo e gerenciamento de permissões através da rede.</li>
+                </ul>
+            </p> <br>
+
+            <h3>Armazenamento</h3> br
+
+
+            <a href="" onclick="showHide()">batata</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <script>
+                function showHide(id){
+                const dropDown = document.getElementById(id).classList.toggle('show')
+                }
+            </script>
+    </main>
+</body>
+</html>

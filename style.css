@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: flex;
+        flex-direction: row;
+
+      }
+.main{
+    margin: 50px 5%;
+}
+.main p{
+    text-align: justify;
+}
+.menu{
+    margin: 10px; 
+    padding: 10px;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+    background-color: #1b1b1b;
+    
+}
+.menu li{
+    background-color: #343434;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu li:hover{
+    background-color: #504e4e;
+}
+
+.bi.bi-caret-down-fill{
+   cursor: pointer;
+    
+}
+.bi-arrow-up-circle{
+    cursor:pointer;
+}
+.bi-arrow-up-circle:hover{
+    color: rgb(116, 62, 62);
+}
+
+.login-web-dropdown{
+    display: none;
+    transition: 0.5s;
+    
+}
+.ao-vivo-dropdown{
+    display: none;
+    transition: 0.5s;
+    
+}
+.show{
+    
+    display: block;
+}
