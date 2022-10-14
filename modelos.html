@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="menu" id="menu">
+        <ul>
+            <a href="#"><li><i class="bi bi-book"></i> Visão Geral</li></a>
+            <a href="#caracteristicas"><li> <i class="bi bi-box-fill"></i> Características</li></a>
+            <a href=""><li><i class="bi bi-gear-fill"></i> Configurações</li></a>
+            <a href="#interface-web" id="login-web" onclick="showHide('login-web-dropdown')"><li >Interface Web <i class="bi bi-caret-down-fill"></i></li></a>
+                <ul class="login-web-dropdown" id="login-web-dropdown">
+                        <a href="#configuracoes-recomendadas"><li>Requisitos recomendados do sistema</li></a>
+                        <a href="#"><li>Inicialização do dispositivo</li></a>
+                        <a href="#"><li>Login</li></a>
+                        <a href="#"><li>Redefinindo a senha</li></a>
+                        <a href="#"><li>Funções web</li></a>
+                </ul>
+            <a href="#"><li>Guia</li></a>  
+            <a href="#" id="ao-vivo" onclick="showHide('ao-vivo-dropdown')"><li>Ao Vivo <i class="bi bi-caret-down-fill"></i></li></a>  
+                <ul class="ao-vivo-dropdown" id="ao-vivo-dropdown">
+                        <a href="#"><li>Fluxo de vídeo</li></a>
+                        <a href="#"><li>Visualização ao vivo</li></a>
+                        <a href="#"><li>Placa reconhecida</li></a>
+                        <a href="#"><li>Instantâneo da placa</li></a>
+                        <a href="#"><li>Funções do sistema</li></a>
+                        <a href="#"><li>Funções do ao vivo</li></a>
+                        <a href="#"><li>Instantâneo do veículo</li></a>
+                        <a href="#"><li>Lista de Eventos</li></a>
+                 </ul>
+        </ul>
+    </nav>
