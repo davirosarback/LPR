@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     
-
-<!--BEGIN SEARCH BOX -->
-
-<div class="search_box">
-    <form action="" id="form2">
-        <div>
-            <input type="text" id="search">
-            <input type="button" id="submit_form" onclick="checkInput()" value="Submit">
+<header> <h3>Escolha seu Modelo</h3></header>
+<div class="modelos">
+    <div class="box" id="box">
+        <div class="img"><img src="imagens/7250.png" width="280" alt=""></div>
+        <div class="box-name" id="box-name">VIP 7250 LPR</div>
+     </div>
+    <div class="box" id="box">
+         <div class="img"><img src="imagens/7260.png" width="200" alt=""></div>
+         <div class="box-name" id="box-name">VIP 7260 LPR</div>
         </div>
-    </form>
 </div>
+<footer></footer>
 
-<p> hello world, hello world, hello world, hello world</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod mollitia dolores nisi corporis earum obcaecati, fugit voluptate libero sequi eaque repudiandae iusto sit. Odit suscipit sit facilis ullam autem minus?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat maxime quas alias dolorem reprehenderit quidem, cum nam nihil dolores facere hic, vel natus obcaecati! Ipsa odio omnis veritatis cumque!
-    learning Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illo qui voluptates numquam iste quasi quae culpa tempore esse accusamus rerum unde, eligendi, sed cumque deserunt, ullam voluptatum accusantium! Provident?
-</p>
-<!--END SEARCH BOX -->
 <script>
-    function checkInput() {
-        var query = document.getElementById('search').value;
-        window.find(query);
-        return true;
+    const box = document.getElementById('box')
+    const boxName = document.getElementById('box-name')
+    box.onmouseenter = function() {
+        boxName.classList.toggle('name-show')
+    }
+    box.onmouseleave = function() {
+        boxName.classList.remove('name-show')
     }
 </script>
 </body>

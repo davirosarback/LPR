@@ -12,11 +12,12 @@
     <nav class="menu-superior">
          <div class="logo"><img src="imagens/7250.png" alt="" height="40px"></div>
          
-         <div class="campo-busca">
-            
-            <button class="lupa" onclick="checkInput()"> <input type="text" id="busca" ><i class="bi bi-search"></i></button>
-         </div>
-
+            <div class="campo-busca">
+                <button class="lupa" onclick="checkInput()" value=""> <input type="text" id="busca" ><i class="bi bi-search"></i></button>
+              </div>
+     
+         
+         
     </nav>
     <div class="corpo">
         <nav class="menu" id="menu">
@@ -98,7 +99,7 @@
                     const dropDown = document.getElementById(id).classList.toggle('show')
                     }
                     function checkInput() {
-        var query = document.getElementById('search').value;
+        var query = document.getElementById('search').value
         window.find(query);
         return true;
     }
