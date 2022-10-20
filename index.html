@@ -13,24 +13,35 @@
 <div class="modelos">
     <div class="box" id="box">
         <div class="img"><img src="imagens/7250.png" width="280" alt=""></div>
-        <div class="box-name" id="box-name">VIP 7250 LPR</div>
+        <div class="box-name" id="box-name" onmouseenter="mostrarNome('#box-name')">VIP 7250 LPR</div>
      </div>
     <div class="box" id="box">
          <div class="img"><img src="imagens/7260.png" width="200" alt=""></div>
-         <div class="box-name" id="box-name">VIP 7260 LPR</div>
+         <div class="box-name" id="box-name2" >VIP 7260 LPR</div>
         </div>
 </div>
 <footer></footer>
 
 <script>
-    const box = document.getElementById('box')
-    const boxName = document.getElementById('box-name')
-    box.onmouseenter = function() {
-        boxName.classList.toggle('name-show')
+    function mostrarNome(id){
+        const boxName = document.getElementsById(id)
+        boxName.classList.add('name-show')
     }
-    box.onmouseleave = function() {
+    function esconderNome(id){
+        const boxName = document.getElementsById(id)
         boxName.classList.remove('name-show')
     }
+    // const box = document.getElementById('box')
+    // const boxName = document.getElementsByClassName('box-name')
+
+
+    // box.onmouseenter = function() {
+    //     boxName.classList.add('name-show')
+    // }
+    // box.onmouseleave = function() {
+    //     boxName.classList.remove('name-show')
+    // }
+
 </script>
 </body>
 </html>

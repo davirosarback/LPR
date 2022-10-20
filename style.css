@@ -190,21 +190,25 @@ footer{
     margin: 0 50px;
     transition: 0.2s ease-in;
     position: relative;
+    
 }
 .box:hover{
     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
    /* transform: scale(1.01); */
 }
-#box-name{
+#box-name, #box-name2{
     position: absolute;
     bottom: -40px;
     color: aliceblue;
     border: 2px solid aliceblue;
     padding: 5px;
     border-radius: 5px;
-    opacity: 0.5;
+    transform: scale(0);
     transition: 0.2s;
 }
-#box-name.name-show{
-    opacity: 1;
+.box:hover #box-name{
+    transform: scale(1);
 }
+.box:hover #box-name2{
+    transform: scale(1);
+   }
