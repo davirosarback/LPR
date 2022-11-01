@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="menu-superior">
-         <div class="logo"><img src="imagens/7250.png" alt="" height="40px"></div>
+         <div class="logo"><img src="imagens/7260.png" alt="" height="40px"></div>
          
             <div class="campo-busca">
                 <button class="lupa" onclick="checkInput()" value=""> <input type="text" id="busca" ><i class="bi bi-search"></i></button>
@@ -20,7 +20,9 @@
          
     </nav>
     <div class="corpo">
+        <button id="fechar" class="fechar" onclick="toggleMenu()">Menu</button>   
         <nav class="menu" id="menu">
+            
             <ul>
                 <a href="#"><li><i class="bi bi-book"></i> Visão Geral</li></a>
                 <a href="#caracteristicas"><li> <i class="bi bi-box-fill"></i> Características</li></a>
@@ -98,11 +100,14 @@
                     function showHide(id){
                     const dropDown = document.getElementById(id).classList.toggle('show')
                     }
-                    function checkInput() {
-        var query = document.getElementById('search').value
-        window.find(query);
-        return true;
-    }
+
+                    function toggleMenu() {
+                    const menu = document.getElementById('menu').classList
+                     menu.toggle('show-menu')
+                     const fechar = document.getElementById('fechar').classList
+                     fechar.toggle('show-menu')
+                     
+                    }
                 </script>
         </main>
     </div>

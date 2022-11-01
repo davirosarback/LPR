@@ -19,6 +19,7 @@ body{
         flex-direction: column;
         width: 100%;
         height: 100vh;
+       
       }
 .corpo{
     width: 100%;
@@ -27,12 +28,14 @@ body{
     flex-direction: row;
     overflow-x: hidden;
     margin-top: 80px;
+    
     box-sizing: border-box;
         
 }
 .main{
     margin-top: 10px;
-    padding: 20px;
+    
+    padding: 0 400px;
        
 }
 .main p{
@@ -40,7 +43,6 @@ body{
 }
 .menu{
     margin: 10px; 
-    
     padding: 20px;
     color: aliceblue;
     padding: 10px;
@@ -53,14 +55,34 @@ body{
     width: 280px;
     height: 800px;
     position: absolute;
-   
-    
-    
-    
-    
-    
-    
+    transition: 0.5s;
+    transform: translateX(-400px);
+      
 }
+.menu.show-menu{
+    transform: translateX(0px);
+}
+.fechar{
+    background-color: #343434;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    transition: 0.5s;
+    font-size: 1em;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    transform: translateX(-300px);
+    cursor: pointer;
+}
+.fechar.show-menu{
+    transform: translateX(0px);
+}
+
 .menu li{
     background-color: #343434;
     margin: 5px;
@@ -89,6 +111,10 @@ body{
     box-sizing: border-box;
 }
 
+.fechar{
+    
+}
+
 .bi.bi-caret-down-fill{
    cursor: pointer;
     
@@ -108,8 +134,14 @@ body{
 }
 .ao-vivo-dropdown{
     display: none;
-    transition: 0.5s;
     
+    
+}
+.consultar-dropdown{
+    display: none;
+}
+.instalacao-dropdown{
+    display: none;
 }
 .show{
     
@@ -212,3 +244,18 @@ footer{
 .box:hover #box-name2{
     transform: scale(1);
    }
+
+
+
+
+/*MEIDA QUERY*/ 
+
+@media (max-width: 900px){
+    .main{
+        padding: 0 20px;
+        box-sizing: content-box;
+    }
+    .menu{
+        height: 400px;
+    }
+}

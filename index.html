@@ -11,14 +11,20 @@
     
 <header> <h3>Escolha seu Modelo</h3></header>
 <div class="modelos">
-    <div class="box" id="box">
-        <div class="img"><img src="imagens/7250.png" width="280" alt=""></div>
-        <div class="box-name" id="box-name" onmouseenter="mostrarNome('#box-name')">VIP 7250 LPR</div>
-     </div>
-    <div class="box" id="box">
-         <div class="img"><img src="imagens/7260.png" width="200" alt=""></div>
-         <div class="box-name" id="box-name2" >VIP 7260 LPR</div>
-        </div>
+    <a href="manual-7250.html">
+        <div class="box" id="box">
+            <div class="img"><img src="imagens/7250.png" width="280" alt=""></div>
+            <div class="box-name" id="box-name" onmouseenter="mostrarNome('#box-name')">VIP 7250 LPR</div>
+         </div> 
+    </a>
+    
+    <a href="manual-7260.html">
+        <div class="box" id="box">
+            <div class="img"><img src="imagens/7260.png" width="200" alt=""></div>
+           <div class="box-name" id="box-name2" >VIP 7260 LPR</div>
+       </div>
+    </a>
+        
 </div>
 <footer></footer>
 
@@ -31,16 +37,7 @@
         const boxName = document.getElementsById(id)
         boxName.classList.remove('name-show')
     }
-    // const box = document.getElementById('box')
-    // const boxName = document.getElementsByClassName('box-name')
-
-
-    // box.onmouseenter = function() {
-    //     boxName.classList.add('name-show')
-    // }
-    // box.onmouseleave = function() {
-    //     boxName.classList.remove('name-show')
-    // }
+   
 
 </script>
 </body>
