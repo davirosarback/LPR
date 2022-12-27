@@ -35,7 +35,8 @@ body{
 .main{
     margin-top: 10px;
     
-    padding: 0 400px;
+    padding: 0 500px;
+    
        
 }
 .main p{
@@ -244,9 +245,42 @@ footer{
 .box:hover #box-name2{
     transform: scale(1);
    }
+td{
+    
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+td:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+th{
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    background-color:#cfc5c5;
+}
 
-
-
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+.atencao{
+    background-color: #cfc5c5;
+    padding: 6px;
+}
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imagem h5{
+    padding: 6px;
+}
+.imagem img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 
 /*MEIDA QUERY*/ 
 
@@ -259,3 +293,6 @@ footer{
         height: 400px;
     }
 }
+
+
+
